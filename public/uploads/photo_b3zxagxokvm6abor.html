@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="images/icons/css/Glyphter.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+      <div class="container-fluid pr-0 pl-0 d-flex flex-wrap justify-content-end">
+        <nav id="top-nav" class="col col-12 p-0 m-0 border-bottom shadow">
+            <!--- tutaj proawdopodobnie tytuł-->
+            <div class="row justify-content-end align-items-center p-0 m-0 h-100 navbar navbar-expand navbar-light bg-light">
+                <div class="collapse navbar-collapse h-100 d-flex justify-content-end align-items-center" id="mobile-menu">
+                    <ul class="navbar-nav h-100">
+                        <li class="dropdown p-2 border-right border-left">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"> 
+                                <i class="icon-wallet"></i>
+                                <p>$1,500.00</p>
+                            </a>
+                            <div class="dropdown-menu"> 
+                                <a class="dropdown-item" href="#">aa</a>
+                                <a class="dropdown-item" href="#">aa</a>
+                            </div>
+                        </li>
+                        <li class="p-2 border-right"><a class="nav-link" href="#">
+                            <i class="icon-notification"></i>
+                        </a></li>
+                        <li class="p-2 border-right"><a class="nav-link" href="#">
+                            <i class="icon-login"></i><p>Zalogowany użytkownik</p>
+                        </a></li>
+                        <li class="p-2 border-right"><a class="nav-link" href="#">
+                            <i class="icon-quit"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+        <div class="row title m-0 fixed-top col col-1 d-sm-flex justify-content-center align-items-center">
+            <i class="fas fa-bars"></i>
+         </div>
+        <aside class="col col-md-2 vh-100 fixed-top d-md-block d-none pr-0 pl-0 sidebar">
+            <div class="title d-flex align-items-center"><p>Just do it</p></div>
+            <ul class="nav d-flex flex-column flex-nowrap">
+                <li class="nav-item pl-0 pb-2 pt-2">
+                  <a class="nav-link active" href="#general">
+                      <i class="icon-general "></i>
+                      <p>General</p>
+                  </a>
+                </li>
+                <li class="nav-item pl-0 pb-2 pt-2">
+                  <a class="nav-link" href="#details">
+                      <i class="icon-details"></i>
+                      <p>Details</p>
+                  </a>
+                </li>
+                <li class="nav-item pl-0 pb-2 pt-2">
+                  <a class="nav-link" href="#links">
+                    <i class="icon-links"></i>
+                    <p>Links</p>
+                  </a>
+                </li>
+                <li class="nav-item pl-0 pb-2 pt-2">
+                  <a class="nav-link" href="#banners">
+                      <i class="icon-banners"></i>
+                      <p>Banners</p>
+                  </a>
+                </li>
+                <li class="nav-item pl-0 pb-2 pt-2">
+                  <a class="nav-link" href="#personal-data" >
+                      <i class="icon-personaldata"></i>
+                      <p>Personal data</p>
+                  </a>
+                </li>
+                <li class="nav-item pl-0 pb-2 pt-2">
+                    <a class="nav-link" href="#payout" >
+                        <i class="icon-payout"></i>
+                        <p>Payout</p>
+                    </a>
+                  </li>
+                  <li class="nav-item pl-0 pb-2 pt-2">
+                    <a class="nav-link" href="#postback">
+                        <i class="icon-postback"></i>
+                        <p>Postback</p>
+                    </a>
+                  </li>
+              </ul>
+        </aside>   
+        <main class="col col-12 col-md-10 vh-100">
+            <div class="container">
+                <article id="general" class="card">
+                    <div class="card-header text-uppercase">
+                      General statistic
+                    </div>
+                    <div class="card-body pr-0 pl-0 text-center">
+                      <div class="card-row border-bottom">
+                          <div class="form-container w-50">
+                            <form>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <input type="date" id="date-from" class="form-control col mr-1" placeholder="Date from" value="2021-07-01">
+                                        <input type="date" id="date-to" class="form-control col mr-1" placeholder="Date to" value="2021-07-07">
+                                        <button class="btn refresh-button"><i class="icon-refresh"></i></button> 
+                                    </div>
+                                </div>
+                              </form>
+                          </div>
+                      </div>
+                      <div class="card-row">
+                        <div class="card-row-container d-flex">
+                            <div class="col col-6">
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                      Visit Signups
+                                      <span class="badge">124</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                      FTD
+                                      <span class="badge">445</span>
+                                    </li>
+                                  </ul>
+                            </div>
+                            <div class="col col-6">
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                      Net deposit
+                                      <span class="badge">564</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                      Turn over
+                                      <span class="badge">432</span>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card-row">
+                        <div class="card-row-container">
+                            <p class="text-left pb-1 font-weight-bold">Earnings chart</p>
+                            <ul class="nav nav-pills justify-content-center" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Signups</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" data-toggle="tab" href="#tabs-2" role="tab">Ftd</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Earned</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-3">
+                                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                    <canvas id="barChart"></canvas>
+                                </div>
+                                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                    <p>Second Panel</p>
+                                </div>
+                                <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                    <p>Third Panel</p>
+                                </div>
+                            </div>
+                        </div>
+                       </div> 
+                    </div>
+                </article>
+                <article class="card" id="details">
+                    <div class="card-header text-uppercase">
+                      Detail statistic
+                    </div>
+                    <div class="card-body pr-0 pl-0">
+                        <div class="card-row border-bottom">
+                            <div class="form-container w-50">
+                                <form>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <input type="date" id="date-from" class="form-control col mr-1" placeholder="Date from" value="2021-07-01">
+                                            <input type="date" id="date-to" class="form-control col mr-1" placeholder="Date to" value="2021-07-07">
+                                            <button class="btn refresh-button"><i class="icon-refresh"></i></button> 
+                                        </div>
+                                    </div>
+                                  </form>
+                              </div>
+                        </div>
+                        <div class="card-row">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                          <th scope="col">Tracker name</th>
+                                          <th scope="col">Initiated date</th>
+                                          <th scope="col">Visits</th>
+                                          <th scope="col">Unique</th>
+                                          <th scope="col">Signups</th>
+                                          <th scope="col">FTD</th>
+                                          <th scope="col">Depositors</th>
+                                          <th scope="col">Deposits ($)</th>
+                                          <th scope="col">Payout ($)</th>
+                                          <th scope="col">Turnover</th>
+                                          <th scope="col">Deal</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>aff/sam_test</td>
+                                          <td>17/11/2020 (17:00)</td>
+                                          <td>569</td>
+                                          <td>114</td>
+                                          <td>12</td>
+                                          <td>6</td>
+                                          <td>3</td>
+                                          <td>34,345.27</td>
+                                          <td>234.00</td>
+                                          <td>456,767.57</td>
+                                          <td>cpl (200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>aff/sam_test</td>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>569</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>34,345.27</td>
+                                            <td>234.00</td>
+                                            <td>456,767.57</td>
+                                            <td>cpl (200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>aff/sam_test</td>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>569</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>34,345.27</td>
+                                            <td>234.00</td>
+                                            <td>456,767.57</td>
+                                            <td>cpl (200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>aff/sam_test</td>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>569</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>34,345.27</td>
+                                            <td>234.00</td>
+                                            <td>456,767.57</td>
+                                            <td>cpl (200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>aff/sam_test</td>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>569</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>34,345.27</td>
+                                            <td>234.00</td>
+                                            <td>456,767.57</td>
+                                            <td>cpl (200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>aff/sam_test</td>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>569</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>34,345.27</td>
+                                            <td>234.00</td>
+                                            <td>456,767.57</td>
+                                            <td>cpl (200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>aff/sam_test</td>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>569</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>34,345.27</td>
+                                            <td>234.00</td>
+                                            <td>456,767.57</td>
+                                            <td>cpl (200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>aff/sam_test</td>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>569</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>34,345.27</td>
+                                            <td>234.00</td>
+                                            <td>456,767.57</td>
+                                            <td>cpl (200)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>aff/sam_test</td>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>569</td>
+                                            <td>114</td>
+                                            <td>12</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>34,345.27</td>
+                                            <td>234.00</td>
+                                            <td>456,767.57</td>
+                                            <td>cpl (200)</td>
+                                        </tr>
+                                      </tbody>
+                                </table>
+                              </div>
+                        </div>
+                        <div class="card-row">
+                            <nav>
+                                <ul class="pagination justify-content-center">
+                                  <li class="page-item"><a class="page-link" href="#"><i class="icon-arrow-left"></i></a></li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                  <li class="page-item"><a class="page-link" href="#"><i class="icon-arrow-right"></i></a></li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </article>
+                <article id="links" class="card">
+                    <div class="card-header text-uppercase">
+                      Links
+                    </div>
+                    <div class="card-body pr-0 pl-0 text-center">
+                      <div class="card-row">
+                        <div class="card-row-container">
+                            <button type="button" class="btn orange-button">+ add new</button>
+                        </div>
+                      </div>
+                      <div class="card-row">
+                        <div class="card-row-container">
+                            <ul class="list-group">
+                                <li class="list-group-item row-link text-left">
+                                    <p class="link-name">Home page</p>
+                                    <p class="link">http://www.homepage.com</p>
+                                    <p class="link-icon">
+                                        <i class="icon-links"></i>
+                                        <i class="icon-trash"></i>
+                                    </p>
+                                </li>
+                                <li class="list-group-item row-link text-left">
+                                    <p class="link-name">Currently offer</p>
+                                    <p class="link">http://www.currently.com</p>
+                                    <p class="link-icon">
+                                        <i class="icon-links"></i>
+                                        <i class="icon-trash"></i>
+                                    </p>
+                                </li>
+                                <li class="list-group-item row-link text-left">
+                                    <p class="link-name">Blurpix</p>
+                                    <p class="link">http://www.blurpix.com</p>
+                                    <p class="link-icon">
+                                        <i class="icon-links"></i>
+                                        <i class="icon-trash"></i>
+                                    </p>
+                                </li>
+                                <li class="list-group-item row-link text-left">
+                                    <p class="link-name">Your site</p>
+                                    <p class="link">http://www.yoursite.com</p>
+                                    <p class="link-icon">
+                                        <i class="icon-links"></i>
+                                        <i class="icon-trash"></i>
+                                    </p>
+                                </li>
+                              </ul>
+                        </div>
+                      </div>
+                      <div class="card-row">
+                        <div class="card-row-container">
+                            <button type="button" class="btn orange-button">+ add new</button>
+                        </div>
+                      </div>
+                    </div>
+                </article>
+                <article id="banners"class="card">
+                    <div class="card-header text-uppercase">
+                      Banners
+                    </div>
+                    <div class="card-body pr-0 pl-0 text-center">
+                      <div class="card-row">
+                        <div class="card-row-container">
+                            <button type="button" class="btn orange-button">+ add new</button>
+                        </div>
+                      </div>
+                      <div class="card-row">
+                        <div class="card-row-container">
+                            <ul class="list-group">
+                                <li class="list-group-item row-link text-left">
+                                    <p class="link-name">Baner main</p>
+                                    <p class="link">http://www.website.com/bannermain.gif</p>
+                                    <p class="link-icon">
+                                        <i class="icon-links"></i>
+                                        <i class="icon-trash"></i>
+                                    </p>
+                                </li>
+                                <li class="list-group-item row-link text-left">
+                                    <p class="link-name">Sign up banner</p>
+                                    <p class="link">http://www.website.com/signupbanner.gif</p>
+                                    <p class="link-icon">
+                                        <i class="icon-links"></i>
+                                        <i class="icon-trash"></i>
+                                    </p>
+                                </li>
+                                <li class="list-group-item row-link text-left">
+                                    <p class="link-name">Banner left side</p>
+                                    <p class="link">http://www.website.com/bannerleftside.gif</p>
+                                    <p class="link-icon">
+                                        <i class="icon-links"></i>
+                                        <i class="icon-trash"></i>
+                                    </p>
+                                </li>
+                                <li class="list-group-item row-link text-left">
+                                    <p class="link-name">Vertical banner</p>
+                                    <p class="link">http://www.website.com/verticalbanner.gif</p>
+                                    <p class="link-icon">
+                                        <i class="icon-links"></i>
+                                        <i class="icon-trash"></i>
+                                    </p>
+                                </li>
+                              </ul>
+                        </div>
+                      </div>
+                      <div class="card-row">
+                        <div class="card-row-container">
+                            <button type="button" class="btn orange-button">+ add new</button>
+                        </div>
+                      </div>
+                    </div>
+                </article>
+                <article id="personal-data" class="card">
+                    <div class="card-header text-uppercase">
+                      Personal data
+                    </div>
+                    <div class="card-body pr-0 pl-0">
+                        
+                        <form>
+                            <div class="card-row border-bottom">
+                                <div class="card-row-container">
+                                <div class="form-group row">
+                                    
+                                    <label for="name" class="col-form-label col-sm-2">Name</label>
+                                    <div class="col-sm-10">
+                                        <input id="name" type="text" class="form-control" >
+                                    </div>
+    
+                                    <label for="surname" class="col-form-label col-sm-2">Surname</label>
+                                    <div class="col-sm-10">
+                                        <input id="surname" type="text" class="form-control" >
+                                    </div>
+                                    
+                                    <label for="email" class="col-form-label col-sm-2">E-mail</label>
+                                    <div class="col-sm-10">
+                                        <input id="email" type="email" class="form-control" >
+                                    </div>
+                                       
+                                    <label for="phone" class="col-form-label col-sm-2">Phon number</label>
+                                    <div class="col-sm-10">
+                                        <input id="phone" type="tel" class="form-control" >
+                                    </div>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="card-row border-bottom">
+                                <div class="card-row-container">
+                                    <div class="form-group row">
+                                        <label for="skype" class="col-form-label col-sm-2">Skype</label>
+                                        <div class="col-sm-10">
+                                            <input id="skype" type="text" class="form-control">
+                                        </div>
+                                           
+                                        <label for="icq"class="col-form-label col-sm-2" >ICQ</label>
+                                        <div class="col-sm-10">
+                                            <input id="icq" type="text" class="form-control">
+                                        </div>
+                                            
+                                        <label for="msn" class="col-form-label col-sm-2">Msn</label>
+                                        <div class="col-sm-10">
+                                            <input id="msn" type="text" class="form-control" >
+                                        </div>
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-row border-bottom">
+                                <div class="card-row-container">
+                                    <div class="form-group row">
+                                        <label for="wallet" class="form-label col-sm-2">Wallet</label>
+                                        <div class="col-sm-10">
+                                            <input id="wallet" type="number" class="form-control" >
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-row border-bottom">
+                                <div class="card-row-container">
+                                    <div class="form-group row">
+                                        <label for="password" class="form-label col-sm-2">Password</label>
+                                        <div class="col-sm-10">
+                                            <input id="password" type="password" class="form-control" >
+                                        </div>
+                                        <label for="repeat" class="form-label col-sm-2">Repeat</label>
+                                        <div class="col-sm-10">
+                                            <input id="repeat" type="password" class="form-control" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-row">
+                                <div class="card-row-container text-center">
+                                    <button type="submit" class="btn orange-button">Save</button>
+                                </div>
+                            </div>
+                           </form>
+                      
+                    </div>
+                </article>
+                <article class="card" id="payout">
+                    <div class="card-header text-uppercase">
+                      Payout
+                    </div>
+                    <div class="card-body pr-0 pl-0">
+                        <div class="card-row border-bottom">
+                            <div class="form-container w-50">
+                                <form>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <input type="date" id="date-from" class="form-control col mr-1" placeholder="Date from" value="2021-07-01">
+                                            <input type="date" id="date-to" class="form-control col mr-1" placeholder="Date to" value="2021-07-07">
+                                            <button class="btn refresh-button"><i class="icon-refresh"></i></button> 
+                                        </div>
+                                    </div>
+                                  </form>
+                              </div>
+                        </div>
+                        <div class="card-row">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                          <th scope="col">Date</th>
+                                          <th scope="col">Amount</th>
+                                          <th scope="col">Deal</th>
+                                          <th scope="col">Account</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>17/11/2020 (17:00)</td>
+                                          <td>34,577.23</td>
+                                          <td>cpl(200)</td>
+                                          <td>bank</td>
+                                          
+                                        </tr>
+                                        <tr>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>34,577.23</td>
+                                            <td>cpl(200)</td>
+                                            <td>bank</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>34,577.23</td>
+                                            <td>cpl(200)</td>
+                                            <td>bank</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>34,577.23</td>
+                                            <td>cpl(200)</td>
+                                            <td>bank</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>34,577.23</td>
+                                            <td>cpl(200)</td>
+                                            <td>bank</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>34,577.23</td>
+                                            <td>cpl(200)</td>
+                                            <td>bank</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>34,577.23</td>
+                                            <td>cpl(200)</td>
+                                            <td>bank</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>34,577.23</td>
+                                            <td>cpl(200)</td>
+                                            <td>bank</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17/11/2020 (17:00)</td>
+                                            <td>34,577.23</td>
+                                            <td>cpl(200)</td>
+                                            <td>bank</td>
+                                        </tr>
+                                      </tbody>
+                                </table>
+                              </div>
+                        </div>
+                        <div class="card-row">
+                            <nav>
+                                <ul class="pagination justify-content-center">
+                                  <li class="page-item"><a class="page-link" href="#"><i class="icon-arrow-left"></i></a></li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                  <li class="page-item"><a class="page-link" href="#"><i class="icon-arrow-right"></i></a></li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </article>
+                <article id="postback" class="card">
+                    <div class="card-header text-uppercase">
+                        Postback
+                    </div>
+                    <form>
+                        <div class="card-body pr-0 pl-0">
+                            <div class="card-row border-bottom">
+                                <div class="form-group row">
+                                    <div class="col col-sm-6">
+                                        <label for="signup" class="form-label">Signup</label>
+                                        <textarea id="signup" class="form-control" rows="5"></textarea>
+                                    </div>
+                                    <div class="col col-sm-6">
+                                        <label for="deposit" class="form-label">Deposit</label>
+                                        <textarea id="deposit" class="form-control" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col col-sm-4">
+                                        <label for="postbacktype" class="form-label">Postback type</label>
+                                        <select id="postbacktype" class="form-control">
+                                            <option selected>S2S(http://)</option>
+                                            <option>Opction 1</option>
+                                            <option>Opction 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col col-sm-4">
+                                        <label for="countries" class="form-label">To countries</label>
+                                        <select id="countries" class="form-control">
+                                            <option selected>Select countries</option>
+                                            <option value="opt1">Opction 1</option>
+                                            <option value="opt2">Opction 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col col-sm-4">
+                                        <label for="options" class="form-label">Sending options</label>
+                                        <select id="options" class="form-control">
+                                            <option selected>Select</option>
+                                            <option value="opt1">Opction 1</option>
+                                            <option value="opt2">Opction 2</option>
+                                            </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-row border-bottom">
+                                <div class="form-group row">
+                                    <div class="col col-sm-6">
+                                        <div class="w-100 checkbox-container  overflow-auto">
+                                            <div class="form-check pt-1 pb-1">
+                                                <input class="form-check-input" type="checkbox" value="check1" id="check1">
+                                                <label class="form-check-label pl-2" for="check1">
+                                                  checkNumber
+                                                </label>
+                                              </div>
+                                              <div class="form-check pt-1 pb-1">
+                                                <input class="form-check-input" type="checkbox" value="check2" id="check2">
+                                                <label class="form-check-label pl-2" for="check2">
+                                                  noAnswer
+                                                </label>
+                                              </div>
+                                              <div class="form-check pt-1 pb-1">
+                                                <input class="form-check-input" type="checkbox" value="check3" id="check3">
+                                                <label class="form-check-label pl-2" for="check3">
+                                                  noCall
+                                                </label>
+                                              </div>
+                                              <div class="form-check pt-1 pb-1">
+                                                <input class="form-check-input" type="checkbox" value="check4" id="check4">
+                                                <label class="form-check-label pl-2" for="check4">
+                                                  callAgain
+                                                </label>
+                                              </div>
+                                              <div class="form-check pt-1 pb-1">
+                                                <input class="form-check-input" type="checkbox" value="check5" id="check5">
+                                                <label class="form-check-label pl-2" for="check5">
+                                                  checkNumber
+                                                </label>
+                                              </div>
+                                              <div class="form-check pt-1 pb-1">
+                                                <input class="form-check-input" type="checkbox" value="check6" id="check6">
+                                                <label class="form-check-label pl-2" for="check6">
+                                                  noAnswer
+                                                </label>
+                                              </div>
+                                              <div class="form-check pt-1 pb-1">
+                                                <input class="form-check-input" type="checkbox" value="check7" id="check7">
+                                                <label class="form-check-label pl-2" for="check7">
+                                                  noCall
+                                                </label>
+                                              </div>
+                                              <div class="form-check pt-1 pb-1">
+                                                <input class="form-check-input" type="checkbox" value="check8" id="check8">
+                                                <label class="form-check-label pl-2" for="check8">
+                                                  callAgain
+                                                </label>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-6">
+                                        <div class="slidecontainer">
+                                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                            <p>Value: <span id="demo"></span></p>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-row border-bottom">
+                                <div class="row justify-content-end">
+                                    <button type="submit" class="btn orange-button">Create Pixel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </main>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
